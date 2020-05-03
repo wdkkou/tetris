@@ -1,0 +1,64 @@
+body {
+  text-align: center;
+}
+
+#stage {
+  background-color: black;
+}
+
+#next {
+  background-color: black;
+}
+
+.wrapper-container {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 10px;
+}
+
+.tetris-container {
+  /* 子要素を横並びにするため */
+  display: flex;
+  background-color: yellow;
+  text-align: center;
+}
+
+.tetris-panel-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+.tetris-panel-container-padding {
+  /*スタートボタンと回転テーブルの間 大きくすると全体が長くなる*/
+  margin-bottom: 242px;
+}
+
+.button-class {
+  margin-top: 10px;
+  max-width: 100%;
+  size: large;
+}
+
+.tetris-button-panel {
+  width: 100%;
+  border-collapse: separate;
+}
+
+.tetris-button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: green;
+  border: solid black;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+h2 {
+  color: black;
+}

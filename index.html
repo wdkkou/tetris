@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script type="text/javascript" src="scripts/tetrimino.js" defer></script>
+    <script type="text/javascript" src="scripts/script.js" defer></script>
+    <title>Tetris</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="col-5 pt-2 pb-2">テトリス</h1>
+    </header>
+    <div class="wrapper-container">
+      <div class="tetris-container">
+        <canvas id="stage" width="300px" height="600px"></canvas>
+        <div class="tetris-panel-container">
+          <h2>Next</h2>
+          <canvas id="next" width="180px" height="180px"></canvas>
+          <br />
+          <div class="button-class">
+            <!-- <button type="button" class="btn btn-success btn-lg" id="start">
+              Start
+            </button> -->
+            <!-- <button type="button" class="btn btn-danger btn-lg" id="stop">
+              Stop
+            </button> -->
+          </div>
+          <div class="tetris-panel-container-padding"></div>
+          <table class="tetris-button-panel">
+            <tr>
+              <td></td>
+              <td id="tetris-rotate-button" class="tetris-button">
+                <svg
+                  class="bi bi-arrow-counterclockwise"
+                  width="1em"
+                  height="1em"
+                  viewbox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.83 6.706a5 5 0 00-7.103-3.16.5.5 0 11-.454-.892A6 6 0 112.545 5.5a.5.5 0 11.91.417 5 5 0 109.375.789z"
+                    clip-rule="evenodd"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.854.146a.5.5 0 00-.708 0l-2.5 2.5a.5.5 0 000 .708l2.5 2.5a.5.5 0 10.708-.708L5.707 3 7.854.854a.5.5 0 000-.708z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td id="tetris-move-left-button" class="tetris-button">
+                <svg
+                  class="bi bi-arrow-left"
+                  width="1em"
+                  height="1em"
+                  viewbox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.854 4.646a.5.5 0 010 .708L3.207 8l2.647 2.646a.5.5 0 01-.708.708l-3-3a.5.5 0 010-.708l3-3a.5.5 0 01.708 0z"
+                    clip-rule="evenodd"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 8a.5.5 0 01.5-.5h10.5a.5.5 0 010 1H3a.5.5 0 01-.5-.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </td>
+              <td id="tetris-fall-button" class="tetris-button">
+                <svg
+                  class="bi bi-arrow-down"
+                  width="1em"
+                  height="1em"
+                  viewbox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 9.646a.5.5 0 01.708 0L8 12.293l2.646-2.647a.5.5 0 01.708.708l-3 3a.5.5 0 01-.708 0l-3-3a.5.5 0 010-.708z"
+                    clip-rule="evenodd"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 2.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V3a.5.5 0 01.5-.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </td>
+              <td id="tetris-move-right-button" class="tetris-button">
+                <svg
+                  class="bi bi-arrow-right"
+                  width="1em"
+                  height="1em"
+                  viewbox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
+                    clip-rule="evenodd"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
