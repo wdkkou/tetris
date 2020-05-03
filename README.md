@@ -1,4 +1,7 @@
-# javascript を使ってテトリス作ってみた
+# javascript を使ってテトリス作ってみ
+## URL
+https://wdkkou.github.io/tetris/index.html
+
 ## 操作方法
 - 右下のボタンをクリックする
 - 回転　スペース
