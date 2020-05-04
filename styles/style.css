@@ -1,13 +1,14 @@
-body {
-  text-align: center;
-}
-
 #stage {
   background-color: black;
 }
 
 #next {
   background-color: black;
+}
+
+.sousa {
+  text-align: left;
+  display: inline-block;
 }
 
 .wrapper-container {
